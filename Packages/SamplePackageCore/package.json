@@ -1,0 +1,11 @@
+{
+  "name": "com.github.qua-iy.sample-package-core",
+  "version": "1.0.0",
+  "displayName": "Unity GitHub Package Test Core",
+  "description": "This is an core test package for GitHub Packages",
+  "unity": "2021.3",
+  "author": {
+    "name": "Yusuke Ishiguro"
+  }
+}
+

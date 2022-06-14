@@ -1,0 +1,16 @@
+{
+    "name": "SamplePackage",
+    "rootNamespace": "",
+    "references": [
+        "GUID:92fb5ac1d05cb44ebb8ef917d619173b"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
