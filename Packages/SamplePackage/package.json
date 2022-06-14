@@ -10,6 +10,9 @@
   "author": {
     "name": "Yusuke Ishiguro"
   },
+  "repository": {
+    "url": "git@github.com:qua-iy/unity-github-package-test.git"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@qua-iy"
   }
