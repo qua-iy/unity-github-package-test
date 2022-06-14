@@ -20,6 +20,8 @@ jobs:
       - run: npm publish ./Packages/SamplePackage
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        continue-on-error: true
       - run: npm publish ./Packages/SamplePackageCore
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        continue-on-error: true
