@@ -8,12 +8,6 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        packagePath:
-          - ./Packages/SamplePackage
-          - ./Packages/SamplePackageCore
     permissions:
       packages: write
       contents: read
@@ -23,6 +17,9 @@ jobs:
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
-      - run: npm publish ${{ matrix.packagePath }}
+      - run: npm publish ./Packages/SamplePackage
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - run: npm publish ./Packages/SamplePackageCore
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
